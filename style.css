@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+
+  /* BACKGROUND MALAM ROMANTIS */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: 300% 300%;
+  animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* TEKS */
+h1 {
+  color: #ffe6f0;
+  text-shadow: 
+    0 0 10px rgba(255, 105, 180, 0.8),
+    0 0 20px rgba(255, 105, 180, 0.6);
+}
+
+/* ANIMASI DETAK */
+.anim-text {
+  font-size: 36px;
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+/* TOMBOL */
+button {
+  margin-top: 25px;
+  padding: 14px 36px;
+  font-size: 18px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  box-shadow: 0 0 25px rgba(255, 0, 100, 0.7);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 0, 120, 1);
+}
+
+/* LOVE MALAM */
+.love {
+  position: absolute;
+  bottom: -20px;
+  font-size: 26px;
+  animation: floatUp 6s linear forwards;
+  filter: drop-shadow(0 0 8px rgba(255, 20, 147, 0.9));
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.6);
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
