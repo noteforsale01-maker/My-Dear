@@ -2,6 +2,13 @@ function pindahHalaman() {
   document.getElementById("dashboard").classList.add("hidden");
   document.getElementById("halaman2").classList.remove("hidden");
 
+  // Menambahkan background
+  document.body.style.backgroundImage = "url('images/background.jpg')";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundAttachment = "fixed";
+
   setInterval(buatLove, 300);
 }
 
@@ -19,4 +26,3 @@ function buatLove() {
     love.remove();
   }, 4000);
 }
-
