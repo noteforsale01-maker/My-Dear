@@ -3,7 +3,7 @@ function pindahHalaman() {
   document.getElementById("halaman2").classList.remove("hidden");
 
   // Menambahkan background
-  document.body.style.backgroundImage = "url('images/background.jpg')";
+  document.body.style.backgroundImage = "url('background.jpg')";
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "no-repeat";
